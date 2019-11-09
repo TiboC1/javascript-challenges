@@ -31,8 +31,8 @@
     inputThree.value = ("0" + three).slice(-2);
     inputFour.value = ("0" + four).slice(-2);
 
-
     function update(){
+        
         target.innerHTML = "+" + inputOne.value + inputTwo.value + inputThree.value + inputFour.value
         inputOne.innerHTML = inputOne.value
         inputTwo.innerHTML = inputTwo.value

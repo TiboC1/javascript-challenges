@@ -11,6 +11,22 @@
 
 (function() {
 
-    // your code here
+    run = document.getElementById("increment"),
+    target = document.getElementById("target");
 
+    str_count = localStorage.getItem("count");
+    if (str_count == null || str_count == "null"){
+      count = 0;
+    } else {
+      count = parseInt(str_count);
+    }
+
+    target.innerHTML = count;
+
+    run.addEventListener("click", function(){
+
+        count++;
+        target.innerHTML = count;
+        localStorage.setItem("count", count);
+    })
 })();
